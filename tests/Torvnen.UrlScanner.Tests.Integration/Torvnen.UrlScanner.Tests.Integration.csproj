@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Torvnen.UrlScanner\Torvnen.UrlScanner.Api.csproj" />
+    <ProjectReference Include="..\..\src\Torvnen.UrlScanner.Api\Torvnen.UrlScanner.Api.csproj" />
   </ItemGroup>
 
 </Project>

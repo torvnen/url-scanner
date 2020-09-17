@@ -5,6 +5,9 @@ using Torvnen.UrlScanner.Api;
 
 namespace Torvnen.UrlScanner.Tests.Integration
 {
+    /// <summary>
+    /// Health-check test for the API.
+    /// </summary>
     public class PingTest
     {
         private readonly WebApplicationFactory<Startup> _factory;

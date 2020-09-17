@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Api", "src\Torvnen.UrlScanner\Torvnen.UrlScanner.Api.csproj", "{B377D492-B9BE-4C68-96EA-899A89BF29B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Tests.Integration", "tests\Torvnen.UrlScanner.Tests.Integration\Torvnen.UrlScanner.Tests.Integration.csproj", "{F1F03894-4E61-44EB-A8F8-479F5CE7C5CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torvnen.UrlScanner.Tests.Integration", "tests\Torvnen.UrlScanner.Tests.Integration\Torvnen.UrlScanner.Tests.Integration.csproj", "{F1F03894-4E61-44EB-A8F8-479F5CE7C5CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Tests.Unit", "tests\Torvnen.UrlScanner.Tests.Unit\Torvnen.UrlScanner.Tests.Unit.csproj", "{A7E04090-6456-497F-B845-8E1DA30266D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torvnen.UrlScanner.Tests.Unit", "tests\Torvnen.UrlScanner.Tests.Unit\Torvnen.UrlScanner.Tests.Unit.csproj", "{A7E04090-6456-497F-B845-8E1DA30266D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.StringProcessor", "src\Torvnen.UrlScanner.StringProcessor\Torvnen.UrlScanner.StringProcessor.csproj", "{069BC427-C541-4944-B27B-842383F5D1CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Api", "src\Torvnen.UrlScanner.Api\Torvnen.UrlScanner.Api.csproj", "{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B377D492-B9BE-4C68-96EA-899A89BF29B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B377D492-B9BE-4C68-96EA-899A89BF29B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B377D492-B9BE-4C68-96EA-899A89BF29B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B377D492-B9BE-4C68-96EA-899A89BF29B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1F03894-4E61-44EB-A8F8-479F5CE7C5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1F03894-4E61-44EB-A8F8-479F5CE7C5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F03894-4E61-44EB-A8F8-479F5CE7C5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +25,14 @@ Global
 		{A7E04090-6456-497F-B845-8E1DA30266D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7E04090-6456-497F-B845-8E1DA30266D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7E04090-6456-497F-B845-8E1DA30266D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069BC427-C541-4944-B27B-842383F5D1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069BC427-C541-4944-B27B-842383F5D1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069BC427-C541-4944-B27B-842383F5D1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069BC427-C541-4944-B27B-842383F5D1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
