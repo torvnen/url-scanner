@@ -4,9 +4,9 @@ TIME ESTIMATE	PRIORITY 1-5	STATUS			TASK DESCRIPTION
 1.0h			5				Done			Research and choose a project template for the API
 1.0h			5				Done			Design a project structure including tests and documentation
 0.5h			5				Done			Initiate version control and create the project
-1.0h			5				Not started		Create a test project and an initial "ping" test
-1.0h			3				Not started		Include running the server when the test runs
-1.5h			4				Not started		Design and implement tests to meet the MVP criteria as described in the work assessment
+1.0h			5				Done			Create a test project and an initial "ping" test
+1.0h			3				Done			Include running the server when the test runs
+1.5h			4				Started			Design and implement tests to meet the MVP criteria as described in the work assessment
 2.0h			5				Not started		Implement API endpoints that meet the MVP criteria -''-
 
 Total 8.0h
