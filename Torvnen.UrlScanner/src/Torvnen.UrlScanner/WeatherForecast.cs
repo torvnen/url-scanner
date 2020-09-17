@@ -1,6 +1,6 @@
 using System;
 
-namespace Torvnen.UrlScanner
+namespace Torvnen.UrlScanner.Api
 {
     public class WeatherForecast
     {
