@@ -1,0 +1,10 @@
+' Usage: Check if URL strURL is alive and reachable.
+'   booURL = IsURL("http://www.ibm.com")
+'   booURL = IsURL("ftp://ftp.novell.com")
+'
+' Note: Protocol header like "http://" must be provided.
+
+    ' File found at most URLs.
+    Const cstrFileIndex As String = "index.htm"
+   
+    IsURL = (URLDownloadToFile(0, strURL, cstrFileIndex, 0, 0) = 0)

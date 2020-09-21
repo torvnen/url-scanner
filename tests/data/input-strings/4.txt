@@ -1,0 +1,17 @@
+What are the protocols supported ... is it only http ... or https, rmtp etc as well
+
+Consider things like domains and subdomains ... www.google.com and www.maps.google.com are valid
+
+Presence or absence of trailing slash
+
+Non-standard port ... http://www.example.com:8800
+
+Deep path after the host ... http://www.example.com/a/b/c/d/e/f/g/h/i.html
+
+URL Parameters ... http://www.test.com?pageid=123&testid=1524
+
+URL encoding ... and how are URL are encoded within a URL if they are the part of the parameters
+
+Anchor tags ... http://www.test.com/do.html#A
+
+Presence of special characters ... if any

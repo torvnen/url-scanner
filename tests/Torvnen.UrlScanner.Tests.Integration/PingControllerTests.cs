@@ -8,11 +8,11 @@ namespace Torvnen.UrlScanner.Tests.Integration
     /// <summary>
     /// Health-check test for the API.
     /// </summary>
-    public class PingTest
+    public class PingControllerTests
     {
         private readonly WebApplicationFactory<Startup> _factory;
 
-        public PingTest()
+        public PingControllerTests()
         {
             _factory = new WebApplicationFactory<Startup>();
         }
