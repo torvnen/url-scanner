@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Torvnen.UrlScanner.UrlExtractor;
 
 namespace Torvnen.UrlScanner.Api
@@ -26,15 +27,18 @@ namespace Torvnen.UrlScanner.Api
 
             // Swagger generator:
             services.AddSwaggerGen();
+
+            // Logging
+            services.AddLogging(c =>
+            {
+                c.AddConsole();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseSwagger(c =>
-            {
-                c.SerializeAsV2 = true;
-            });
+            app.UseSwagger(c => { c.SerializeAsV2 = true; });
 
             app.UseSwaggerUI(c =>
             {
@@ -53,10 +57,7 @@ namespace Torvnen.UrlScanner.Api
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
