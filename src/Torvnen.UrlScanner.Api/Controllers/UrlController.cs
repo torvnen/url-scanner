@@ -1,13 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mime;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Torvnen.UrlScanner.Api.Models;
-using Torvnen.UrlScanner.UrlExtractor;
 
 namespace Torvnen.UrlScanner.Api.Controllers
 {
