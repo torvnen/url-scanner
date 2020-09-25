@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Linq;
 using NUnit.Framework;
-using Torvnen.UrlScanner.UrlExtractor;
 
 namespace Torvnen.UrlScanner.Tests.Unit
 {
@@ -25,7 +24,7 @@ namespace Torvnen.UrlScanner.Tests.Unit
                 var testData = File.ReadAllText(testDataFilePath);
 
                 // Act
-                var urls = _sp.ExtractUrisFromStrings(testData);
+                var urls = _sp.ExtractUrisFromStrings(testData).ToList();
 
                 // Assert
                 Assert.IsNotEmpty(urls, "TestData should have URLs in it. TestData: {0}", testData);
@@ -33,7 +32,7 @@ namespace Torvnen.UrlScanner.Tests.Unit
                 // Test data set 4 has 6 URLs in it - check for that
                 if (testDataFilePath.EndsWith("4.txt"))
                 {
-                    Assert.AreEqual(6, urls.Count());
+                    Assert.AreEqual(6, urls.Count);
                 }
             }
         }

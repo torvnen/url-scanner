@@ -7,13 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Tests.In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Tests.Unit", "tests\Torvnen.UrlScanner.Tests.Unit\Torvnen.UrlScanner.Tests.Unit.csproj", "{A7E04090-6456-497F-B845-8E1DA30266D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.StringProcessor", "src\Torvnen.UrlScanner.StringProcessor\Torvnen.UrlScanner.StringProcessor.csproj", "{069BC427-C541-4944-B27B-842383F5D1CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.UrlExtractor", "src\Torvnen.UrlScanner.StringProcessor\Torvnen.UrlScanner.UrlExtractor.csproj", "{069BC427-C541-4944-B27B-842383F5D1CC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torvnen.UrlScanner.Api", "src\Torvnen.UrlScanner.Api\Torvnen.UrlScanner.Api.csproj", "{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torvnen.UrlScanner.Tools.DomainExtensionFinder", "tools\Torvnen.UrlScanner.Tools.DomainExtensionFinder\Torvnen.UrlScanner.Tools.DomainExtensionFinder.csproj", "{6E38AC73-DBE1-41B2-9D59-A16277326E58}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{6E2FB4D1-F9CB-4659-A2D9-0623A5DCF82E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{14E7A386-3E66-48CA-AEF8-40104783519B}"
 EndProject
@@ -41,10 +37,6 @@ Global
 		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E38AC73-DBE1-41B2-9D59-A16277326E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E38AC73-DBE1-41B2-9D59-A16277326E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E38AC73-DBE1-41B2-9D59-A16277326E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E38AC73-DBE1-41B2-9D59-A16277326E58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,7 +46,6 @@ Global
 		{A7E04090-6456-497F-B845-8E1DA30266D7} = {794CE218-911C-4133-BE11-FC7AD46BE318}
 		{069BC427-C541-4944-B27B-842383F5D1CC} = {14E7A386-3E66-48CA-AEF8-40104783519B}
 		{3A58B2E6-6DDB-4A4A-B5E2-C10A0361856C} = {14E7A386-3E66-48CA-AEF8-40104783519B}
-		{6E38AC73-DBE1-41B2-9D59-A16277326E58} = {6E2FB4D1-F9CB-4659-A2D9-0623A5DCF82E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBF34292-45D7-45FB-8742-171501351C6B}

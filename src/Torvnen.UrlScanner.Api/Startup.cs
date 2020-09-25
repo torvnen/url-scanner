@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Torvnen.UrlScanner.UrlExtractor;
 
 namespace Torvnen.UrlScanner.Api
 {
@@ -19,6 +20,7 @@ namespace Torvnen.UrlScanner.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddTransient(_ => new UrlExtractor.UrlExtractor());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

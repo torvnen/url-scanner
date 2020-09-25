@@ -1,12 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Torvnen.UrlScanner.UrlExtractor</AssemblyName>
+    <RootNamespace>Torvnen.UrlScanner.UrlExtractor</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Linq.Async" Version="4.1.1" />
-  </ItemGroup>
 
 </Project>
