@@ -20,12 +20,28 @@ namespace Torvnen.UrlScanner.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // Business logic components:
             services.AddTransient(_ => new UrlExtractor.UrlExtractor());
+
+            // Swagger generator:
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger(c =>
+            {
+                c.SerializeAsV2 = true;
+            });
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "URL Scanner API V1");
+                c.RoutePrefix = string.Empty;
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
